@@ -5,7 +5,6 @@ import uglify from 'gulp-uglify';
 import rename from 'gulp-rename';
 import cleanCSS from 'gulp-clean-css';
 import del from 'gulp-clean';
-import imagemin from 'gulp-imagemin';
 import dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 import cssimport from 'gulp-cssimport';
@@ -83,7 +82,6 @@ export function scripts() {
 
 export function images() {
   return gulp.src(paths.images.src)
-    .pipe(imagemin())
     .pipe(gulp.dest(paths.images.dest));
 }
 
