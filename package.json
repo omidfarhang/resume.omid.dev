@@ -1,0 +1,67 @@
+{
+  "name": "resume.omid.dev",
+  "description": "Resume of Omid Farhang",
+  "version": "1.0.0",
+  "type": "module",
+  "keywords": [
+    "html",
+    "sass",
+    "responsive",
+    "front-end",
+    "resume",
+    "web"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:omidfarhang/resume.omid.dev.git"
+  },
+  "bugs": {
+    "url": "https://github.com/omidfarhang/resume.omid.dev/issues"
+  },
+  "homepage": "https://resume.omid.dev",
+  "scripts": {
+    "build": "gulp build",
+    "clean": "rm -rf ./dist",
+    "build:styles": "gulp styles",
+    "build:fonts": "gulp fonts",
+    "prepack": "npm run build"
+  },
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/register": "^7.18.9",
+    "barrelsby": "^2.5.1",
+    "browser-sync": "^2.27.10",
+    "child_process": "^1.0.2",
+    "del": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssimport": "^7.0.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-inject": "^5.0.5",
+    "gulp-livereload": "^4.0.2",
+    "gulp-minify": "^3.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.1.3",
+    "gulp-rev": "^9.0.0",
+    "gulp-ruby-sass": "^4.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sitemap": "^8.0.0",
+    "gulp-uglify": "^3.0.2",
+    "jshint": "^2.13.5",
+    "panini": "^1.7.2",
+    "sass": "^1.56.1",
+    "tiny-lr": "^2.0.0"
+  }
+}
