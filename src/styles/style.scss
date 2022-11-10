@@ -1,3 +1,12 @@
+body {
+  max-width: 1080px;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0 auto;
+}
+
+
+// OLD CLASSES
 .lst-kix_dbkpwzgbegyx-1 > li:before {
   content: '\0025cb  ';
 }
@@ -388,7 +397,6 @@ table th {
   border-top-style: solid;
   border-left-style: solid;
   border-bottom-width: 0pt;
-  width: 358.5pt;
   border-top-color: #ffffff;
   border-bottom-style: solid;
 }
@@ -406,7 +414,6 @@ table th {
   border-top-style: solid;
   border-left-style: solid;
   border-bottom-width: 0pt;
-  width: 165pt;
   border-top-color: #ffffff;
   border-bottom-style: solid;
 }
@@ -708,12 +715,6 @@ table th {
   font-family: 'Arial';
   color: #000000;
   font-weight: 400;
-}
-
-.c32 {
-  background-color: #ffffff;
-  max-width: 525.6pt;
-  padding: 28.8pt 43.2pt 43.2pt 43.2pt;
 }
 
 .c12 {
