@@ -46,6 +46,10 @@ const paths = {
     src: ['src/**/*.htm', 'src/**/*.html'],
     dest: 'dist'
   },
+  files: {
+    src: ['src/**/*.pdf'],
+    dest: 'dist'
+  },
   fonts: {
     src: ['src/fonts/*', 'node_modules/vazirmatn/fonts/webfonts/*', 'node_modules/vazirmatn/misc/Farsi-Digits/fonts/webfonts/*'],
     dest: 'dist/fonts'
@@ -95,14 +99,14 @@ export function icons() {
 
 export function html() {
   return gulp.src(paths.html.src)
+  .pipe(inject(gulp.src(['dist/**/*.css', 'dist/**/*.js'], {read: true, allowEmpty: true})))
   .pipe(htmlmin({removeComments: true}))
   .pipe(gulp.dest(paths.html.dest));
 }
 
-export function injects() {
-  return gulp.src(paths.html.dest)
-  .pipe(inject(gulp.src(['dist/**/*.css', 'dist/**/*.js'], {read: true, allowEmpty: true})))
-  .pipe(gulp.dest(paths.html.dest));
+export function files() {
+  return gulp.src(paths.files.src)
+  .pipe(gulp.dest(paths.files.dest));
 }
 
 function watchFiles() {
@@ -115,6 +119,6 @@ function watchFiles() {
 }
 export { watchFiles as watch };
 
-export const build = gulp.series(clean, scripts, styles, images, fonts, icons, html, injects);
+export const build = gulp.series(clean, scripts, styles, images, fonts, icons, html, files);
 
 export default build;
