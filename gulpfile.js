@@ -97,7 +97,7 @@ export function icons() {
 
 export function html() {
   return gulp.src(paths.html.src)
-  .pipe(inject(gulp.src(['dist/**/*.css', 'dist/**/*.js'], {read: true, allowEmpty: true})))
+  .pipe(inject(gulp.src(['dist/**/*.css', 'dist/**/*.js'], {read: true, allowEmpty: true}), {ignorePath: 'dist/'}))
   .pipe(htmlmin({removeComments: true}))
   .pipe(gulp.dest(paths.html.dest));
 }
