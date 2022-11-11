@@ -11,6 +11,7 @@ import cssimport from 'gulp-cssimport';
 import autoprefixer from 'gulp-autoprefixer';
 import htmlmin from 'gulp-htmlmin';
 import inject from 'gulp-inject';
+import replace from 'gulp-replace';
 
 const sass = gulpSass(dartSass);
 
@@ -50,7 +51,7 @@ const paths = {
     dest: 'dist'
   },
   fonts: {
-    src: ['src/fonts/*', 'node_modules/vazirmatn/fonts/webfonts/*', 'node_modules/vazirmatn/misc/Farsi-Digits/fonts/webfonts/*'],
+    src: ['src/fonts/*', 'node_modules/@fontsource/roboto/files/*'],
     dest: 'dist/fonts'
   }
 };
@@ -67,6 +68,7 @@ export function styles() {
     .pipe(sass({ style: 'expanded', includePaths: ['node_modules'] }))
     .pipe(autoprefixer())
     .pipe(concat('styles.css'))
+    .pipe(replace('files/', '../fonts/'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(cleanCSS({level: 2}))
     .pipe(gulp.dest(paths.styles.dest));
