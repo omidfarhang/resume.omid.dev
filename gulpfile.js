@@ -26,11 +26,11 @@ const sass = gulpSass(dartSass);
 
 const paths = {
   styles: {
-    src: ['src/styles/**/*.scss'],
+    src: ['node_modules/bootstrap/dist/css/bootstrap.css', 'src/styles/**/*.scss'],
     dest: 'dist/styles'
   },
   scripts: {
-    src: 'src/scripts/**/*.js',
+    src: ['node_modules/bootstrap/dist/js/bootstrap.js', 'src/scripts/**/*.js'],
     dest: 'dist/scripts'
   },
   images: {
