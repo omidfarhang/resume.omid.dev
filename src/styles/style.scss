@@ -14,7 +14,6 @@ strong {
   font-weight: 700;
 }
 
-
 .title {
   padding-top: 0pt;
   color: #000000;
@@ -120,6 +119,45 @@ h6 {
   text-align: left;
 }
 
+.section-title {
+  td {
+    background-color: #2079c7;
+    h2 {
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 16pt;
+      line-height: 1;
+      text-align: left;
+      padding: 20px;
+      margin: 0;
+    }
+  }
+}
+
+.section {
+  &.courses {
+    table {
+      tr {
+        td {
+          vertical-align: middle;
+          height: 100px;
+          img {
+            width: 100px;
+            height: auto;
+          }
+          h4 {
+            color: #000000;
+            margin-bottom: 5px;
+          }
+          span {
+            color: #000000;
+          }
+        }
+      }
+    }
+
+  }
+}
 
 // OLD CLASSES
 .lst-kix_dbkpwzgbegyx-1 > li:before {
@@ -561,7 +599,6 @@ table th {
   margin-left: 0pt;
   padding-top: 6pt;
   list-style-position: inside;
-  text-indent: 45pt;
   padding-bottom: 0pt;
   line-height: 1.3;
   text-align: justify;
