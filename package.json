@@ -58,7 +58,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-sitemap": "^8.0.0",
     "gulp-uglify": "^3.0.2",
-    "jshint": "^2.13.5",
+    "jshint": "^2.13.6",
     "panini": "^1.7.2",
     "sass": "^1.56.1",
     "tiny-lr": "^2.0.0"
