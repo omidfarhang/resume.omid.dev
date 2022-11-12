@@ -66,6 +66,7 @@
   "dependencies": {
     "@fontsource/roboto": "^4.5.8",
     "bootstrap": "^5.2.2",
+    "bootstrap-print-css": "^1.0.1",
     "jquery": "^3.6.1",
     "popper.js": "^1.16.1"
   }
