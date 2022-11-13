@@ -27,7 +27,7 @@ const sass = gulpSass(dartSass);
 
 const paths = {
   styles: {
-    src: ['node_modules/bootstrap/dist/css/bootstrap.css', 'node_modules/bootstrap-print-css/css/bootstrap-print.css', 'src/styles/**/*.scss'],
+    src: ['node_modules/@fortawesome/fontawesome-free/css/all.css', 'node_modules/bootstrap/dist/css/bootstrap.css', 'node_modules/bootstrap-print-css/css/bootstrap-print.css', 'src/styles/**/*.scss'],
     dest: 'dist/styles'
   },
   scripts: {
@@ -51,7 +51,7 @@ const paths = {
     dest: 'dist'
   },
   fonts: {
-    src: ['src/fonts/*', 'node_modules/@fontsource/roboto/files/*'],
+    src: ['src/fonts/*', 'node_modules/@fontsource/roboto/files/*', 'node_modules/@fortawesome/fontawesome-free/webfonts/*'],
     dest: 'dist/fonts'
   }
 };
@@ -69,6 +69,7 @@ export function styles() {
     .pipe(autoprefixer())
     .pipe(concat('styles.css'))
     .pipe(replace('files/', '../fonts/'))
+    .pipe(replace('../webfonts/', '../fonts/'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(cleanCSS({level: 2}))
     .pipe(gulp.dest(paths.styles.dest));

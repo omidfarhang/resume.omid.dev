@@ -1,13 +1,12 @@
-@import "@fontsource/roboto";
+@import '@fontsource/roboto';
 
 * {
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 body {
   font-family: roboto;
 }
-
 
 li {
   color: #464646;
@@ -31,4 +30,20 @@ ul {
     font-size: 18px;
     line-height: 1;
   }
+}
+
+.fa-square-phone {
+  color: #2079c7;
+}
+.fa-whatsapp {
+  color: #128C7E;
+}
+.fa-telegram {
+  color: #2AABEE;
+}
+.fa-envelope {
+  color: #b75600;
+}
+.fa-file-pdf {
+  color: #b40000;
 }
