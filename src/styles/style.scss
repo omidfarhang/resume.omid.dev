@@ -6,6 +6,8 @@
 
 body {
   font-family: roboto;
+  background: rgb(207,207,207);
+  background: linear-gradient(180deg, rgba(207,207,207,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);
 }
 
 li {
@@ -24,7 +26,7 @@ ul {
 
 .card {
   .card-header {
-    background-color: #2079c7;
+    background-color: #0a2c4a;
     color: #ffffff;
     font-weight: 500;
     font-size: 18px;
