@@ -1,17 +1,16 @@
-@import '@fontsource/roboto';
+@import 'https://cdn.omid.dev/styles.min.css';
 
 * {
   transition: all 0.3s;
 }
 
 body {
-  font-family: roboto;
-  // background: #f7f7f7;
-  // background: linear-gradient(190deg,#ffffff 1.88%,#f7f7f7 10.48%);
+  font-family: Vazirmatn;
 }
 
 li {
   color: #464646;
+  list-style-position: inside;
 }
 
 p {
@@ -21,13 +20,11 @@ p {
 
 ul {
   margin: 0;
-  padding: 0px 10px;
+  padding: 0px 0px;
 }
 
 .card {
   .card-header {
-    // background-color: #0a2c4a;
-    // color: #ffffff;
     font-weight: 500;
     font-size: 18px;
     line-height: 1;
