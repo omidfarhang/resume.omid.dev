@@ -15,19 +15,9 @@ import replace from 'gulp-replace';
 
 const sass = gulpSass(dartSass);
 
-
-// const sitemap = require('gulp-sitemap');
-// const lr = require('tiny-lr');
-// const eslint = require("gulp-eslint");
-// const plumber = require("gulp-plumber");
-// const panini = require('panini');
-// const fileinclude = require('gulp-file-include');
-// const rev = require('gulp-rev');
-// const replace = require('gulp-replace');
-
 const paths = {
   styles: {
-    src: ['node_modules/@fortawesome/fontawesome-free/css/all.css', 'node_modules/bootstrap/dist/css/bootstrap.css', 'node_modules/bootstrap-print-css/css/bootstrap-print.css', 'src/styles/**/*.scss'],
+    src: ['node_modules/bootstrap/dist/css/bootstrap.css', 'node_modules/bootstrap-print-css/css/bootstrap-print.css', 'src/styles/**/*.scss'],
     dest: 'dist/styles'
   },
   scripts: {
@@ -51,7 +41,7 @@ const paths = {
     dest: 'dist'
   },
   fonts: {
-    src: ['src/fonts/*', 'node_modules/@fontsource/roboto/files/*', 'node_modules/@fortawesome/fontawesome-free/webfonts/*'],
+    src: ['src/fonts/*'],
     dest: 'dist/fonts'
   }
 };
