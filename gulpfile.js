@@ -21,7 +21,7 @@ const paths = {
     dest: 'dist/styles'
   },
   scripts: {
-    src: ['node_modules/bootstrap/dist/js/bootstrap.js', 'src/scripts/**/*.js'],
+    src: ['node_modules/bootstrap/dist/js/bootstrap.js'],
     dest: 'dist/scripts'
   },
   images: {
@@ -66,7 +66,7 @@ export function styles() {
 }
 
 export function scripts() {
-  return gulp.src(paths.scripts.src, { sourcemaps: true, allowEmpty: true })
+  return gulp.src(paths.scripts.src, { sourcemaps: true})
     .pipe(babel())
     .pipe(uglify())
     .pipe(concat('scripts.min.js'))
@@ -110,6 +110,6 @@ function watchFiles() {
 }
 export { watchFiles as watch };
 
-export const build = gulp.series(clean, scripts, styles, images, fonts, icons, html, files);
+export const build = gulp.series(clean, scripts, styles, images, html, files);
 
 export default build;
