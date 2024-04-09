@@ -5,7 +5,7 @@ import uglify from 'gulp-uglify';
 import rename from 'gulp-rename';
 import cleanCSS from 'gulp-clean-css';
 import del from 'gulp-clean';
-import dartSass from 'sass';
+import * as dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 import cssimport from 'gulp-cssimport';
 import autoprefixer from 'gulp-autoprefixer';
@@ -66,7 +66,7 @@ export function styles() {
 }
 
 export function scripts() {
-  return gulp.src(paths.scripts.src, { sourcemaps: true })
+  return gulp.src(paths.scripts.src, { sourcemaps: true, allowEmpty: true })
     .pipe(babel())
     .pipe(uglify())
     .pipe(concat('scripts.min.js'))
