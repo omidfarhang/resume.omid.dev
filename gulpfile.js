@@ -74,7 +74,7 @@ export function scripts() {
 }
 
 export function images() {
-  return gulp.src(paths.images.src)
+  return gulp.src(paths.images.src, {removeBOM: false, allowEmpty: true})
     .pipe(gulp.dest(paths.images.dest));
 }
 
@@ -96,7 +96,7 @@ export function html() {
 }
 
 export function files() {
-  return gulp.src(paths.files.src)
+  return gulp.src(paths.files.src, {removeBOM: false, allowEmpty: true})
   .pipe(gulp.dest(paths.files.dest));
 }
 
