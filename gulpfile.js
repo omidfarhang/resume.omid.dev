@@ -79,12 +79,12 @@ export function images() {
 }
 
 export function fonts() {
-  return gulp.src(paths.fonts.src)
+  return gulp.src(paths.fonts.src, {removeBOM: false, allowEmpty: true})
   .pipe(gulp.dest(paths.fonts.dest));
 }
 
 export function icons() {
-  return gulp.src(paths.icons.src)
+  return gulp.src(paths.icons.src, {removeBOM: false, allowEmpty: true})
   .pipe(gulp.dest(paths.icons.dest));
 }
 
