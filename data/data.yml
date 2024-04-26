@@ -1,0 +1,284 @@
+basic:
+  name: Omid Farhang                      # name
+  title: Angular Developer           # job title
+  avatar:
+    show: false                       # show or hide avatar
+    path: /images/omid_farhang.jpg        # avatar file path
+
+contact:
+  # meta
+  location:                # location
+  email: hi@omid.dev       # email address
+  phone: +98-919-5038545   # phone number, format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
+  website: omid.dev        # site URL without schema, like example.com, will automatically prepand "https://"
+
+  gender:                  # gender or pronoun
+  birthday:                # birthday
+  nationality:             # nationality
+  visa:                    # passport visa
+  drivinglicense:          # driving licence
+
+  # contact
+  wechat:                  # username
+  whatsapp:                # 8611122223333     | https://wa.me/8611122223333
+  telegram:                # username          | https://t.me/username
+  messenger:               # username          | https://m.me/username
+  line:                    # lineid            | https://line.me/R/ti/p/@lineid
+  viber:                   # username          | https://vb.me/username
+  threema:                 # userid            | https://threema.id/userid
+
+  # programmer
+  github: omidfarhang      # username          | https://github.com/username
+  gitlab:                  # username          | https://gitlab.com/username
+  bitbucket:               # username          | https://bitbucket.com/username
+  stackoverflow:           # id or id/username | https://stackoverflow.com/users/id/username
+  leetcode:                # username          | https://leetcode.com/username
+  codeforces:              # username          | https://codeforces.com/profile/username
+  codewars:                # username          | https://www.codewars.com/users/username
+  codepen:                 # username          | https://codepen.io/username
+  tryhackme:               # username          | https://tryhackme.com/p/username
+
+  # academic
+  googlescholar:           # username          | https://scholar.google.com/citations?user=username
+  researchgate:            # username          | https://www.researchgate.net/profile/username
+  kaggle:                  # username          | https://www.kaggle.com/username
+  orcid:                   # id                | https://orcid.org/id
+  figshare:                # name/id           | https://figshare.com/authors/name/id
+
+  # writer
+  devto:                   # username          | https://dev.to/username
+  medium:                  # username          | https://medium.com/@username
+  wordpress:               # username          | https://username.wordpress.com
+  blogger:                 # username          | https://username.blogspot.com
+  wikipedia:               # username          | https://www.wikipedia.org/wiki/User:username
+
+  # designer
+  figma:                   # username          | https://www.figma.com/@username
+  behance:                 # username          | https://www.behance.net/username
+  dribble:                 # username          | https://dribbble.com/username
+  artstation:              # username          | https://www.artstation.com/username
+
+  # other cv
+  linkedin: omidfarhang    # username          | https://linkedin.com/in/username
+  indeed:                  # resumeid          | https://my.indeed.com/p/resumeid
+  xing: Omid_Farhang       # username          | https://www.xing.com/profile/username
+  fiverr:                  # username          | https://www.fiverr.com/username
+  freelancer:              # username          | https://www.freelancer.com/u/username
+
+  # social media
+  twitter:                 # username          | https://twitter.com/username
+  mastodon:                # username@server
+  instagram:               # username          | https://instagram.com/username
+  unsplash:                # username          | https://unsplash.com/@username
+  _500px:                  # username          | https://500px.com/p/username
+  youtube:                 # username          | https://www.youtube.com/@username
+  tiktok:                  # username          | https://www.tiktok.com/@username
+  quora:                   # username          | https://www.quora.com/profile/username
+  zhihu:                   # username          | https://www.zhihu.com/people/username
+  goodreads:               # username          | https://www.goodreads.com/user/show/username
+  strava:                  # useid             | https://www.strava.com/athletes/userid
+
+profile:
+  show: true
+  order: 1
+  title: Summary
+  description: |
+    Experienced professional with a robust background spanning multiple domains: As a Senior Angular Developer, I've crafted high-performance, secure applications for over 8 years. As a Lead Frontend Developer, I've led teams and honed skills in PHP, HTML5, CSS3, and JavaScript, ensuring top-tier results. Additionally, with 15+ years as a Linux Administrator, I've adeptly managed Linux systems, guaranteeing seamless operation.
+
+skill:
+  show: true
+  order: 2
+  title: Skills
+
+  groups:
+    - name: Frontend
+      item:
+        - HTML5
+        - CSS3
+        - SASS
+        - SCSS
+        - LESS
+        - Flex
+        - Bootstrap
+    - name: Angular
+      item:
+        - AngularJS
+        - CLI
+        - RxJS
+        - NgRX
+        - Standalone
+        - Signals
+        - SSR/SSG
+        - Nebular
+        - Material
+        - D3
+    - name: Software Architect
+      item:
+        - DRY
+        - SOLID
+        - Design and Develop Frameworks and Design Systems
+    - name: Programming Languages
+      item:
+        - JavaScript/TypeScript (NodeJs)
+        - PHP
+        - Good understanding of Java
+    - name: Frameworks and Tools
+      item:
+        - Angular
+        - NextJs
+        - ExpressJs
+        - Nuxt
+        - NestJS
+        - Laravel
+        - Webpack
+        - Gulp
+        - Grunt
+        - Familiar with SpringBoot
+    - name: Project Management
+      item:
+        - Agile methodologies
+    - name: CMS and Site Generators
+      item:
+        - Hugo
+        - Jekyll
+        - WordPress
+    - name: Network Protocols
+      item:
+        - RESTful API
+        - RPC/gRPC
+        - RTSP
+    - name: Database
+      item:
+        - MySQL
+        - Familiar with NoSQL/MongoDB
+    - name: Linux
+      item:
+        - Arch
+        - Debian
+        - Apt
+        - AUR
+        - Pacman
+        - Bash
+        - Zsh
+    - name: Server Administrator
+      item:
+        - Nginx
+        - Apache
+        - Postfix
+        - Dovecot
+        - Varnish
+        - CDN and Optimization
+        - SSL
+        - CI/CD
+        - Docker
+    - name: Languages
+      item:
+        - Persian (Native)
+        - English (Advance)
+        - German (B1)
+
+
+experience:
+  show: true
+  order: 3
+  title: Work History
+
+  items:
+    - company: JIBit
+      link: 
+      tags: Full-time
+      date: Aug 2019 - Present
+      role: Lead Frontend Developer 
+      location: Tehran, Iran
+      description: |
+        Jibit is a FinTech company, aiming to remove financial complexity through building Fintech infrastructure solutions, Enterprise financial services, Smart payments solutions for startups.
+        + Engineered and launched a proprietary frontend framework based on Angular to streamline panel development process; resulted in 40% faster project completion times and improved code consistency across all panels.
+        + Migrate all old web panels to use the unified internal frameworks.
+        + Develop and Manage Landing Pages, Blogs, email templates and keep the styles shared between all projects.
+        + Participate in Agile ceremonies, including daily stand-ups, sprint planning, and retrospectives.
+
+    - company: Raymandan Taly Parseh
+      link:
+      tags: Part Time, Remote
+      date: Jun 2020 - Mar 2022
+      role: Tech Lead
+      location: Tehran, Iran
+      description: |
+        Raymandan Taly Parseh is a business consultants company.
+        + Leading software development (Landing Pages, Portal and Panels)
+        + Setting up web and mail servers based on Ubuntu, Nginx, MariaDB, Postfix, Dovecot.
+        + Setting up live broadcast of cameras over the web using RTSP and FFMPEG.
+        + Optimize server configurations and conduct regular security audits to safeguard against potential vulnerabilities and cyber threats.
+        + Implement robust backup and disaster recovery solutions to safeguard critical data and ensure business continuity.
+
+    
+    - company: Polito
+      link:
+      tags: Full-time
+      date: Nov 2018 - Aug 2019
+      role: Lead Web Developer
+      location: Tehran, Iran
+      description: |
+        Poolito was a FinTech startup, providing innovative payment solutions.
+        + Leading the Frontend Team
+        + Developing Admin/Client Panel using Angular 7, Angular Material, Flex Layouts and gRPC Protocol.
+        + Developing landing pages using Bootstrap, Scrollify, jQuery, Popper.
+
+    
+    - company: ModernPal
+      link:
+      tags: Full-time
+      date: Oct 2015 - Nov 2018
+      role: Full Stack Developer
+      location: Tehran, Iran
+      description: |
+        + Developed HealthyPal application Frontend. The main product is a health application connecting people to doctors and instructors providing a different kind of services from medical to fitness.
+        + Developed FeePal application Frontend and Backend. It's an innovative online exchange platform.
+        + Successfully migrate projects from AngularJs to Angular 2+ and PHP Laravel to Java Spring Boot, Spring Data JPA
+
+    - company: Haseb System Consultancy Co
+      link:
+      tags: Full-time
+      date: Sep 2014 - Nov 2015
+      role: System Administrator
+      location: Tehran, Iran
+      description: |
+        Haseb System is a business consultants company.
+        + Managed Windows Server and Domain Controller setup and maintenance, along with TFS Server administration. 
+        + Spearheaded the development of internal project management panels and personnel timesheet systems. Additionally, innovated side projects for the company utilizing PHP and MySQL technologies.
+
+    - company: IRIB (Islamic Republic of Iran Broadcasting)
+      link:
+      tags: Full-time
+      date: Sep 2007 - Jun 2008
+      role: IT Support
+      location: Tehran, Iran
+      description: |
+        + Web Developer
+        + IT Support to maintain Windows Based computers.
+
+certificate:
+  show: true
+  order: 4
+  title: Certificates
+
+  items:
+    - name: CCNA Routing and Switching 200-120
+      issuer: Cisco
+      date: 2016
+      link: 
+    - name: MCSA 2012
+      issuer: Microsoft
+      date: 2015
+      link:
+    - name: Network+
+      issuer: CompTIA
+      date: 2014
+      link:
+    - name: B1
+      issuer: Deutsches Sprachinstitut Teheran (DSIT)
+      date: 2011 - 2013
+      link:
+
+
+close: <strong>Sorry, my resume has been hidden.</strong>
