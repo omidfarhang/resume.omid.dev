@@ -17,7 +17,11 @@ const sass = gulpSass(dartSass);
 
 const paths = {
   styles: {
-    src: ['node_modules/bootstrap/dist/css/bootstrap.css', 'node_modules/bootstrap-print-css/css/bootstrap-print.css', 'src/styles/**/*.scss'],
+    src: [
+      'node_modules/bootstrap/dist/css/bootstrap.css',
+      'node_modules/bootstrap-print-css/css/bootstrap-print.css',
+      'node_modules/@fortawesome/fontawesome-free/css/all.css',
+      'src/styles/**/*.scss'],
     dest: 'dist/styles'
   },
   scripts: {
@@ -41,7 +45,7 @@ const paths = {
     dest: 'dist'
   },
   fonts: {
-    src: ['src/fonts/*'],
+    src: ['node_modules/@fortawesome/fontawesome-free/webfonts/*'],
     dest: 'dist/fonts'
   }
 };
@@ -110,6 +114,6 @@ function watchFiles() {
 }
 export { watchFiles as watch };
 
-export const build = gulp.series(clean, scripts, styles, images, html, files);
+export const build = gulp.series(clean, scripts, styles, fonts, images, html, files);
 
 export default build;

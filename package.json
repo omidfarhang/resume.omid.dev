@@ -64,6 +64,7 @@
     "tiny-lr": "^2.0.0"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.2",
     "bootstrap": "^5.3.3",
     "bootstrap-print-css": "^1.0.1",
     "jquery": "^3.7.1",
