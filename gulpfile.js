@@ -47,6 +47,10 @@ const paths = {
   fonts: {
     src: ['node_modules/@fortawesome/fontawesome-free/webfonts/*'],
     dest: 'dist/fonts'
+  },
+  statics: {
+    src: ['src/statics/*'],
+    dest: 'dist'
   }
 };
 
@@ -104,6 +108,11 @@ export function files() {
   .pipe(gulp.dest(paths.files.dest));
 }
 
+export function statics() {
+  return gulp.src(paths.statics.src, {removeBOM: false, allowEmpty: true})
+  .pipe(gulp.dest(paths.statics.dest));
+}
+
 function watchFiles() {
   gulp.watch(paths.scripts.src, scripts);
   gulp.watch(paths.styles.src, styles);
@@ -111,9 +120,10 @@ function watchFiles() {
   gulp.watch(paths.icons.src, icons);
   gulp.watch(paths.fonts.src, fonts);
   gulp.watch(paths.html.src, html);
+  gulp.watch(paths.statics.src, statics);
 }
 export { watchFiles as watch };
 
-export const build = gulp.series(clean, scripts, styles, fonts, images, html, files);
+export const build = gulp.series(clean, scripts, styles, fonts, images, html, files, statics);
 
 export default build;
